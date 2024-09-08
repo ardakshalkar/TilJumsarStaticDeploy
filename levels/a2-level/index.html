@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="canonical" href="http://til-jumsar.kz/levels/a2-level">
-        <meta name="description" content="Website description.">
+        <meta name="description" content="TilJumsar арқылы қазақша қызықты, әрі пайдалы мәтін, караоке және бейне жазбалары арқылы үйренуге болады">
         <title>A2</title>
-        <link rel="stylesheet" href="http://til-jumsar.kz/assets/build/css/main.css?id=ed9f1184a2f8e57d9715070766cc4083">
+        <link rel="stylesheet" href="http://til-jumsar.kz/assets/build/css/main.css?id=57d0d23362e645132fc7705af0d689a9">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <script defer src="/assets/build/js/main.js?id=0d53f7a1c1aa99437e8a1cf3576e85e5"></script>
         <script src="https://cdn.tailwindcss.com"></script>
@@ -17,12 +17,12 @@
             <div class="">
                 <div class="container-sm sm:mx-auto max-w-screen-xl pt-5">
                     <div class="flex flex-row">
-  <div class="w-3/4">
+  <div class="w-1/2 md:w-3/4">
     <a href="http://til-jumsar.kz/index.html">
       <img src="http://til-jumsar.kz/assets/images/logo.svg"/>
     </a>
   </div>
-  <div class="w-1/4">
+  <div class="w-1/2 md:w-1/4">
     <div class="w-[58px] h-10 rounded-lg justify-start items-start inline-flex">
       <div class="px-4 py-2.5 bg-orange-300 bg-opacity-0 rounded-lg shadow border border-slate-600 justify-center items-center gap-2 flex">
         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" 
@@ -49,10 +49,7 @@
         <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Қаз</a>
       </li>
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Eng</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Рус</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Qaz</a>
       </li>
     </ul>
 </div>
@@ -60,548 +57,467 @@
             </div>
             <div class="flex-grow flex">
                 <div class="max-w-screen-xl w-screen mx-auto">
-                    <div class="p-8 ">
+                    <div class="p-4 md:p-8">
     <h1 class="text-3xl font-bold">Деңгейлер!</h1>
-    <div class="flex flex-row py-5">
+    <!-- Mobile select field -->
+    <div class="md:hidden py-5">
+        <select id="levelSelect" class="text-center w-full p-2 border border-gray-300 rounded-lg text-xl font-medium text-gray-900 bg-white focus:ring-4 focus:ring-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600">
+            <option value="http://til-jumsar.kz/levels/a1-level/index.html" >A1</option>
+            <option value="http://til-jumsar.kz/levels/a2-level/index.html" selected>A2</option>
+        </select>
+    </div>
+
+    <!-- Desktop buttons -->
+    <div class="hidden md:flex flex-row py-5">
         <a href="http://til-jumsar.kz/levels/a1-level/index.html" class="border border-gray-200 text-center w-1/2 py-5 px-5 me-2 text-xl mb-2 font-medium text-gray-900 focus:outline-none bg-white rounded-lg  hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">A1</a>
         <a href="http://til-jumsar.kz/levels/a2-level/index.html" class="border-4 border-red-800 text-center w-1/2 py-5 px-5 me-2 mb-2 text-xl font-medium text-gray-900 focus:outline-none bg-white rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">A2</a>
     </div>
     <div class="flex flex-col">
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">1</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-1-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Менің хоббиім (Сөз тіркесі)
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-1-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">1</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-1-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Менің хоббиім (Сөз тіркесі)
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-1-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_1_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_1_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-1-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-1-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-1-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-1-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-1-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-1-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">2</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-2-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Туған жер
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-2-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">2</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-2-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Туған жер
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-2-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_2_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_2_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-2-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-2-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-2-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-2-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-2-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-2-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">3</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-3-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Мені досыңмен таныстыршы
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-3-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">3</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-3-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Мені досыңмен таныстыршы
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-3-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_3_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_3_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-3-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-3-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-3-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-3-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-3-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-3-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">4</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-4-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Отбасы - мүшелерімен таныстыру- қандай адам?
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-4-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">4</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-4-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Отбасы - мүшелерімен таныстыру- қандай адам?
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-4-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_4_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_4_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-4-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-4-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-4-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-4-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-4-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-4-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">5</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-5-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Саяхаттау
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-5-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">5</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-5-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Саяхаттау
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-5-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_5_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_5_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-5-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-5-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-5-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-5-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-5-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-5-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">6</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-6-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Жол сұрау
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-6-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">6</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-6-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Жол сұрау
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-6-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_6_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_6_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-6-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-6-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-6-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-6-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-6-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-6-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">7</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-7-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Киім дүкенінде
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-7-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">7</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-7-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Киім дүкенінде
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-7-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_7_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_7_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-7-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-7-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-7-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-7-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-7-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-7-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">8</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-8-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Тағамдар
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-8-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">8</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-8-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Тағамдар
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-8-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_8_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_8_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-8-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-8-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-8-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-8-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-8-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-8-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">9</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-9-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Әлемдік көрме
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-9-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">9</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-9-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Әлемдік көрме
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-9-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_9_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_9_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-9-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-9-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-9-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-9-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-9-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-9-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">10</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-10-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Қай жеріңіз аурады?
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-10-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">10</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-10-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Қай жеріңіз аурады?
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-10-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_10_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_10_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-10-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-10-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-10-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-10-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-10-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-10-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">11</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-11-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Менің жоспарым
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-11-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">11</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-11-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Менің жоспарым
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-11-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_11_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_11_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-11-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-11-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-11-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-11-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-11-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-11-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">12</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-12-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Менің жұмысым
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-12-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">12</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-12-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Менің жұмысым
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-12-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_12_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_12_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-12-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-12-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-12-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-12-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-12-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-12-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">13</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-13-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Әлеуметтік желі
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-13-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">13</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-13-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Әлеуметтік желі
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-13-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_13_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_13_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-13-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-13-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-13-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-13-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-13-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-13-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">14</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-14-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Қандай көмек керек?
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-14-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">14</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-14-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Қандай көмек керек?
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-14-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_14_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_14_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-14-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-14-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-14-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-14-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-14-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-14-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
         </div>
         
-            <div class="border hover:border-red-500 border-gray-200 rounded-lg p-5 my-2 bg-white">
-            <span class="w-6 h-6 rounded-full  inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold border-gray-900 border-2">15</span>
-            <a href="http://til-jumsar.kz/lessons/cyr-a2-15-lesson/index.html" class="py-2 font-['Inter'] text-3xl hover:underline font-bold"> 
-                Менің университетім
-            </a>
-            
-
-            <img class="w-full" src="http://til-jumsar.kz/assets/images/dummy_banner2.png"/>
-            <!--<img class="w-full" src="http://til-jumsar.kz/assets/images/lesson_banner.png"/>-->
-            <div class="flex flex-row justify-evenly font-['Inter'] my-5">
-                <div class="px-3" >
-                    <a href="http://til-jumsar.kz/lessons/cyr-a2-15-lesson/index.html" class="text-2xl hover:font-bold">
+            <div class="border my-1 hover:border-red-500 border-gray-200 rounded-lg p-4 bg-white">
+            <div class="flex items-center mb-2">
+                <span class="w-6 h-6 rounded-full flex items-center justify-center bg-white text-gray-700 text-lg font-bold border-gray-900 border-2 mr-2">15</span>
+                <a href="http://til-jumsar.kz/lessons/cyr-a2-15-lesson/index.html" class="text-xl md:text-2xl hover:underline font-bold font-['Inter']"> 
+                    Менің университетім
+                </a>
+            </div>
+            <img class="w-full mb-4" src="http://til-jumsar.kz/assets/images/dummy_banner2.png" alt="Lesson banner"/>
+            <div class="hidden md:grid grid-cols-2 md:grid-cols-4 gap-4 font-['Inter']">
+                <div>
+                    <a href="http://til-jumsar.kz/lessons/cyr-a2-15-lesson/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">
                         Бейне сабақ
                     </a>
-                    <!--<a href="http://til-jumsar.kz/videos/CYR_A2_15_lesson-video/index.html" class="text-2xl hover:font-bold">Бейне сабақ</a>-->
                     <div class="discrete_progress_bar" style="background-position:-100%"></div>
                 </div>
-                <div class="px-3">
-                    <!--CYR_A2_15_video-->
-                    <a href="http://til-jumsar.kz/videos/cyr-a2-15-video/index.html" class="text-2xl hover:font-bold">Бейне жазба</a>
+                <div>
+                    <a href="http://til-jumsar.kz/videos/cyr-a2-15-video/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Бейне жазба</a>
                     <div class="discrete_progress_bar" style="background-position:-75%"></div>
                 </div>
-                <div class="px-3">
-                    <!--<a href="http://til-jumsar.kz/texts/index.html" class="text-2xl hover:font-bold">Мәтін</a>-->
-                    <a href="http://til-jumsar.kz/texts/cyr-a2-15-text/index.html" class="text-2xl hover:font-bold">Мәтін</a>
+                <div>
+                    <a href="http://til-jumsar.kz/texts/cyr-a2-15-text/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Мәтін</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
-                <div class="px-3">
-                    
-                    <a href="http://til-jumsar.kz/songs/cyr-a2-15-song/index.html" class="text-2xl hover:font-bold">Ән айту</a>
+                <div>
+                    <a href="http://til-jumsar.kz/songs/cyr-a2-15-song/index.html" class="text-lg md:text-xl hover:font-bold block mb-1">Ән айту</a>
                     <div class="discrete_progress_bar" style="background-position:-50%"></div>
                 </div>
             </div>
@@ -609,6 +525,11 @@
         
         </div>
 </div>
+<script>
+    document.getElementById('levelSelect').addEventListener('change', function() {
+        window.location.href = this.value;
+    });
+</script>
                 </div>
             </div>
             <div class="flex-shrink bg-gray-700">
